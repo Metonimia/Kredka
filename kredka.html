@@ -3,9 +3,9 @@
 	<title>Kredka Sklep Papierniczy</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="strona-taty.css">
+	<link rel="stylesheet" type="text/css" href="kredka.css">
 </head>
 <body>
 	<nav>
@@ -89,23 +89,7 @@
 			<h1>Jak nas znaleźć?</h1>
 			<div class="row">
 				<div class="col-m-6">
-				    <div id="map"></div>
-				    <script>
-				      function initMap() {
-				        var kredka = {lat: 50.67, lng: 17.94};
-				        var map = new google.maps.Map(document.getElementById('map'), {
-				          zoom: 18,
-				          center: kredka
-				        });
-				        var marker = new google.maps.Marker({
-				          position: kredka,
-				          map: map
-				        });
-				      }
-				    </script>
-				    <script async defer
-				    src="https://maps.googleapis.com/maps/api/js?key=">
-				    </script>
+				    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.205604044909!2d17.94579451512002!3d50.67900847875158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471053a310e923eb%3A0x96c63ffc1f189e3e!2sKredka.+Sklep+z+art.+biurowymi!5e0!3m2!1spl!2str!4v1511175048219" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 				<div class="col-m-6">
 					<p><span>Adres:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
