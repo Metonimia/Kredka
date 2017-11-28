@@ -17,7 +17,8 @@ body, html {
 	margin: 0 auto;
 }
 
-.row:before, .row:after {
+.row::before,
+.row::after {
 	content: "";
 	display: table;
 	clear: both;
