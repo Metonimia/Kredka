@@ -1,3 +1,5 @@
 fajny-projekt.html
 fajny-projekt.css
 node_modules/
+images/build/
+.DS_Store

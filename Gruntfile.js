@@ -9,7 +9,7 @@ module.exports = function(grunt) {
   		},
   		dist: {
   			files: {
-  				'main.css': 'main.sass'
+  				'*.sass': 'kredka.css'
   			}
   		}
   	},
@@ -27,22 +27,24 @@ module.exports = function(grunt) {
 
   watch: {
       css: {
-        files: ['src/css/*.scss'],
+        files: ['*.scss'],
         tasks: ['sass:dev']
       },
       js: {
-        files: ['src/js/*.js'],
+        files: ['*.js'],
         tasks: ['uglify:dev']
       }
     },
 
     browserSync: {
        bsFiles: {
-            src : 'assets/css/*.css'
+            src : 'kredka.css'
         },
         options: {
+          watchTask: true,
           server: {
-             baseDir: "./"
+             baseDir: "./",
+             index: "kredka.html"
            }
         }
       }
@@ -58,5 +60,5 @@ module.exports = function(grunt) {
 
   // Default task(s).
 
-  grunt.registerTask('default', ['sass', 'imagemin', 'browserSync']);
+  grunt.registerTask('default', ['sass', 'imagemin', 'browserSync', 'watch']);
 };
