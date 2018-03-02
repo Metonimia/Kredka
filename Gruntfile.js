@@ -9,7 +9,7 @@ module.exports = function(grunt) {
   		},
   		dist: {
   			files: {
-  				'*.sass': 'kredka.css'
+  				'kredka.css': '*.sass' 
   			}
   		}
   	},
@@ -27,12 +27,8 @@ module.exports = function(grunt) {
 
   watch: {
       css: {
-        files: ['*.scss'],
-        tasks: ['sass:dev']
-      },
-      js: {
-        files: ['*.js'],
-        tasks: ['uglify:dev']
+        files: ['*.sass'],
+        tasks: ['sass']
       }
     },
 
